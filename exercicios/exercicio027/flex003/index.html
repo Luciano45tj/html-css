@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexibol Box</title>
     <style>
+        *{
+            margin:0%;
+            padding: 0%;
+        }
      .container{
             background-color: lightsalmon;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row row-reverse
+            wrap;
+            justify-content: center;
             
+
 
         }
         .item{
             background-color: lightblue;
             border: 1px solid black;
-            border-radius: 10px;
-            flex: auto;
+            text-align: center;
+            width: 30PX;
+
             
+        }
+        p:first-of-type{
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item A">exemplo de blocos A</div>
-        <div class="item B">exemplo de bloco B</div>
-        <div class="item C">exemplo de blocoabo C </div>
-        <div class="item D">exemplo de bloco D.</div>
-        <div class="item E">exemplo de blocoe E</div>
-        <div class="item F">exemplo de bloco F</div>
-        <div class="item G">exemplo de bloco G</div>
+        <div class="item A">A</divv>
+        <div class="item B">B</div>
+        <div class="item C">C</div>
+        <div class="item D">D</div>
+        <div class="item E">E</div>
+        <div class="item F">F</div>
+        <div class="item G">G</div>
+        <div class="especial">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus in sequi error tenetur molestias voluptas blanditiis voluptatum. Impedit quia neque ducimus a? Tempore, eius quo quisquam in minima doloremque veniam!</p>
+        </div>
+
+        
     </div>
     
 </body>
